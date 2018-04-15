@@ -393,7 +393,7 @@ def process_image(imagedata, sz=11, scale=None):
 
 def load_image(file, sz=11, scale=None):
     with Image.open(file).convert("RGBA") as imagedata:
-        return process_image(imagedata, sz)
+        return process_image(imagedata, sz, scale)
 
 
 def load_gif_frames(file, sz=11, scale=None):
